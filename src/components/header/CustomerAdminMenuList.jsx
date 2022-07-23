@@ -6,16 +6,19 @@ const CustomerAdminMenuList = () => {
       name: 'Customer admin',
       role: 'Responsable Clients',
       acronyme: 'TB',
+      id: 1,
     },
     {
       name: 'Customer admin',
       role: 'Responsable Clients',
       acronyme: 'KC',
+      id: 2,
     },
     {
       name: 'Customer admin',
       role: 'Responsable Clients',
       acronyme: 'D',
+      id: 3,
     },
   ];
 
@@ -33,8 +36,10 @@ const CustomerAdminMenuList = () => {
                 <p className='font-bold text-sm'>{user.acronyme}</p>
               </div>
               <div className='flex flex-col text-xs'>
-                <p>{user.name}</p>
-                <p>{user.role}</p>
+                <p className='font-semibold'>{user.name}</p>
+                <p className=' text-gray-400' style={{ fontSize: '10px' }}>
+                  {user.role}
+                </p>
               </div>
             </div>
           </div>

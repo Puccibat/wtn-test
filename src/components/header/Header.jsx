@@ -1,8 +1,8 @@
 import React from 'react';
 import CustomerAdminMenuList from './CustomerAdminMenuList';
 import MessageUnreadCounter from './MessageUnreadCounter';
-import Logo from '../assets/images/logo.png';
-import Shape from '../assets/images/shape.png';
+import CurrentCustomerAdmin from './CurrentCustomerAdmin';
+import Logo from '../../assets/images/logo.png';
 
 const Header = () => {
   return (
@@ -15,15 +15,7 @@ const Header = () => {
           </div>
           <MessageUnreadCounter />
         </div>
-        <div className='bg-black opacity-80 w-1/4 lg:w-1/6  cursor-pointer flex justify-evenly items-center'>
-          <div className=' bg-stone-400 w-8 h-8 rounded-full flex justify-center items-center'>
-            <p className='font-bold'>A</p>
-          </div>
-          <div className='hidden lg:contents text-white text-xs'>
-            Customer Admin #1
-          </div>
-          <img src={Shape} alt='chevron icon' />
-        </div>
+        <CurrentCustomerAdmin />
       </div>
       <div className='relative'>
         <div className='bg-cyan-400 h-4 w-full text-white text-xs font-bold absolute'>

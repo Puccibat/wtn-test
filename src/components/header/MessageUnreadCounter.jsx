@@ -1,5 +1,5 @@
 import React from 'react';
-import Envelop from '../assets/images/envelop.png';
+import Envelop from '../../assets/images/envelop.png';
 
 const MessageUnreadCounter = () => {
   const messagesUnread = 4;
