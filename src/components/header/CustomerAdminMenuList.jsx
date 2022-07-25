@@ -22,9 +22,9 @@ const CustomerAdminMenuList = () => {
     },
   ];
 
-  let toggle = true;
+  let toggle = false;
 
-  let classNameVisible = 'bg-white border-2 border-stone-200';
+  let classNameVisible = 'bg-white border-2 border-t-0 border-stone-200 z-10';
   let classNameHidden = 'bg-white border-2 border-stone-200 hidden';
   return (
     <>
